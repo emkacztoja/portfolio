@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Portfolio.css';
+import './styling/Portfolio.css';
 import Header from './Header';
 
 const photos = [

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Cennik.css';
+import './styling/Cennik.css';
 import Header from './Header';
 
 const predefinedPlans = [
@@ -16,11 +16,7 @@ function Cennik() {
   const [price, setPrice] = useState(100);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    calculatePrice();
-  }, [photos, editing, delivery]);
-
-  const calculatePrice = () => {
+  const calculatePrice = useCallback(() => {
     if (photos < 1) {
       setPrice(0);
       return;
@@ -44,7 +40,11 @@ function Cennik() {
     }
 
     setPrice(newPrice);
-  };
+  }, [photos, editing, delivery]);
+
+  useEffect(() => {
+    calculatePrice();
+  }, [photos, editing, delivery, calculatePrice]);
 
   const handleContinue = (plan) => {
     const selectedPlan = plan || {

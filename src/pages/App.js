@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Kontakt from './Kontakt';
 import Portfolio from './Portfolio';
-import O_mnie from './O_mnie';
+import Omnie from './Omnie';
 import Cennik from './Cennik';
 import Checkout from './Checkout';
+import Summary from './Summary';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/summary" element={<Summary />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/o_mnie" element={<O_mnie />} />
+        <Route path="/omnie" element={<Omnie />} />
         <Route path="/cennik" element={<Cennik />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>

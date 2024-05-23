@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './styling/Header.css';
 import { FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
