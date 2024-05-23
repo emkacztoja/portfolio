@@ -21,6 +21,7 @@ const photos = [
 function Portfolio() {
   const [modalImage, setModalImage] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [specialImage, setSpecialImage] = useState(false);
 
   const openModal = (imageSrc) => {
     setModalImage(imageSrc);
@@ -31,7 +32,14 @@ function Portfolio() {
   };
 
   const handleSearch = (event) => {
-    setSearchTerm(event.target.value.toLowerCase());
+    const term = event.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    if (term === 'skarpeta') {
+      setSpecialImage(true);
+    } else {
+      setSpecialImage(false);
+    }
   };
 
   const filteredPhotos = photos.filter(photo =>
@@ -53,16 +61,26 @@ function Portfolio() {
           className="search-bar"
         />
         <div className="photo-grid">
-          {filteredPhotos.map(photo => (
+          {specialImage ? (
             <div
               className="photo"
-              key={photo.src}
-              onClick={() => openModal(photo.src)}
-              style={{ backgroundImage: `url(${photo.src})` }}
+              onClick={() => openModal('https://code.emkacz.pl/websitephotos/special.jpg')}
+              style={{ backgroundImage: 'url(https://code.emkacz.pl/websitephotos/special.jpg)' }}
             >
-              <div className="overlay">{photo.description}</div>
+              <div className="overlay">sYrEnA r20 bOsTo</div>
             </div>
-          ))}
+          ) : (
+            filteredPhotos.map(photo => (
+              <div
+                className="photo"
+                key={photo.src}
+                onClick={() => openModal(photo.src)}
+                style={{ backgroundImage: `url(${photo.src})` }}
+              >
+                <div className="overlay">{photo.description}</div>
+              </div>
+            ))
+          )}
         </div>
       </div>
       {modalImage && (
