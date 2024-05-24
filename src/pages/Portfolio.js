@@ -35,7 +35,7 @@ function Portfolio() {
     const term = event.target.value.toLowerCase();
     setSearchTerm(term);
 
-    if (term === 'skarpeta') {
+    if (term === 'wojciechmichalowski180kgwzrostu') {
       setSpecialImage(true);
     } else {
       setSpecialImage(false);
