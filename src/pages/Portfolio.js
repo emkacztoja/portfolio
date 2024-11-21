@@ -3,19 +3,19 @@ import './styling/Portfolio.css';
 import Header from './Header';
 
 const photos = [
-  { src: 'https://code.emkacz.pl/websitephotos/bmw4.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw2.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw3.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw7.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw5.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw1.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/bmw6.jpg', alt: 'BMW M3 Competition', description: 'BMW M3 Competition 2024', brand: 'BMW', model: 'M3', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/A45s.jpg', alt: 'Mercedes A45S', description: 'Mercedes A45S 2023', brand: 'Mercedes', model: 'A45S', year: '2023' },
-  { src: 'https://code.emkacz.pl/websitephotos/AudiTT.jpg', alt: 'Audi TT', description: 'Audi TT 2024', brand: 'Audi', model: 'TT', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/Huracan.jpg', alt: 'Lamborghini Huracan', description: 'Lamborghini Huracan 2024', brand: 'Lamborghini', model: 'Huracan', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/Huracan2.jpg', alt: 'Lamborghini Huracan', description: 'Lamborghini Huracan 2024', brand: 'Lamborghini', model: 'Huracan', year: '2024' },
-  { src: 'https://code.emkacz.pl/websitephotos/Mustang.jpg', alt: 'Ford Mustang', description: 'Ford Mustang 2023', brand: 'Ford', model: 'Mustang', year: '2023' },
-  { src: 'https://code.emkacz.pl/websitephotos/Urus.jpg', alt: 'Lamborghini Urus', description: 'Lamborghini Urus 2023', brand: 'Lamborghini', model: 'Urus', year: '2023' },
+  { src: 'https://emkacztoja.github.io/bmw4.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw2.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw3.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw7.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw5.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw1.jpg', alt: 'BMW X3M Competition', description: 'BMW X3M Competition 2024', brand: 'BMW', model: 'X3M', year: '2024' },
+  { src: 'https://emkacztoja.github.io/bmw6.jpg', alt: 'BMW M3 Competition', description: 'BMW M3 Competition 2024', brand: 'BMW', model: 'M3', year: '2024' },
+  { src: 'https://emkacztoja.github.io/A45s.jpg', alt: 'Mercedes A45S', description: 'Mercedes A45S 2023', brand: 'Mercedes', model: 'A45S', year: '2023' },
+  { src: 'https://emkacztoja.github.io/AudiTT.jpg', alt: 'Audi TT', description: 'Audi TT 2024', brand: 'Audi', model: 'TT', year: '2024' },
+  { src: 'https://emkacztoja.github.io/Huracan.jpg', alt: 'Lamborghini Huracan', description: 'Lamborghini Huracan 2024', brand: 'Lamborghini', model: 'Huracan', year: '2024' },
+  { src: 'https://emkacztoja.github.io/Huracan2.jpg', alt: 'Lamborghini Huracan', description: 'Lamborghini Huracan 2024', brand: 'Lamborghini', model: 'Huracan', year: '2024' },
+  { src: 'https://emkacztoja.github.io/Mustang.jpg', alt: 'Ford Mustang', description: 'Ford Mustang 2023', brand: 'Ford', model: 'Mustang', year: '2023' },
+  { src: 'https://emkacztoja.github.io/Urus.jpg', alt: 'Lamborghini Urus', description: 'Lamborghini Urus 2023', brand: 'Lamborghini', model: 'Urus', year: '2023' },
 ];
 
 function Portfolio() {
