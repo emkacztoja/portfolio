@@ -9,24 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Aleksander Kowalczuk - Full Stack Developer</title>
-    <script>
-      // Small script to set dark theme by default if user has no saved preference.
-      // It also respects a previously saved preference. This runs early to avoid FOUC.
-      try {
-        const stored = localStorage.getItem('theme');
-        if (stored === 'dark') {
-          document.documentElement.classList.add('dark');
-        } else if (stored === 'light') {
-          document.documentElement.classList.remove('dark');
-        } else {
-          // No stored preference: default to dark
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        }
-      } catch (e) {
-        // ignore
-      }
-    </script>
   </head>
   <body>
     <div id="root"></div>
