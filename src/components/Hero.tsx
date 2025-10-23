@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';  
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -78,26 +79,26 @@ const Hero = () => {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110"
+            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110 text-gray-800 visited:text-gray-800 dark:text-white dark:visited:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             aria-label="GitHub"
           >
-            <Github className="w-6 h-6" />
+            <FaGithub className="w-6 h-6 text-current fill-current" />
           </a>
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110"
+            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110 text-gray-800 visited:text-gray-800 dark:text-white dark:visited:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-6 h-6" />
+            <FaLinkedin className="w-6 h-6 text-current fill-current" />
           </a>
           <a
             href="mailto:contact@example.com"
-            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110"
+            className="p-3 rounded-full bg-gray-100 dark:bg-darkCard hover:bg-primary hover:text-white dark:hover:bg-primary transition-all hover:scale-110 text-gray-800 visited:text-gray-800 dark:text-white dark:visited:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             aria-label="Email"
           >
-            <Mail className="w-6 h-6" />
+            <FaEnvelope className="w-6 h-6 text-current fill-current" />
           </a>
         </motion.div>
       </motion.div>

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center space-y-6">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-2">Portfolio</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">Aleksander Kowalczuk</h3>
             <p className="text-gray-400">
               Building the future, one line of code at a time.
             </p>
@@ -17,26 +17,26 @@ const Footer = () => {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110 text-white visited:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               aria-label="GitHub"
             >
-              <FaGithub className="w-6 h-6" />
+              <FaGithub className="w-6 h-6 text-white dark:text-white fill-current" />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110 text-white visited:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               aria-label="LinkedIn"
             >
-              <FaLinkedin className="w-6 h-6" />
+              <FaLinkedin className="w-6 h-6 text-white dark:text-white fill-current" />
             </a>
             <a
               href="mailto:contact@example.com"
-              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-primary transition-transform hover:scale-110 text-white visited:text-white dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               aria-label="Email"
             >
-              <FaEnvelope className="w-6 h-6" />
+              <FaEnvelope className="w-6 h-6 text-white dark:text-white fill-current" />
             </a>
           </div>
 
